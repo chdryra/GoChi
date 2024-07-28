@@ -52,7 +52,7 @@ func main() {
 	// Mount the admin sub-router
 	r.Mount("/admin", adminRouter())
 
-	http.ListenAndServe(":3333", r)
+	http.ListenAndServe(":8080", r)
 }
 
 var listArticles = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
